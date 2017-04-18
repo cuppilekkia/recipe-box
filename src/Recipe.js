@@ -45,6 +45,9 @@ class Recipe extends React.Component {
       });
       value = value.map((val)=>val.trim());
     }
+    if (value === "") {
+      value = "Untitled";
+    }
     this.setState({
       newRecipe: update(this.state.newRecipe, {[name]: {$set: value}})
     });
@@ -97,6 +100,7 @@ class Recipe extends React.Component {
         <Collapse isOpened={this.state.isOpened}
           springConfig={{stiffness: 250, damping: 15}}>
           <div className="panel-block">
+            <div className="block">Ingredients:</div>
             {ingredients}
           </div>
           <div className="panel-block">

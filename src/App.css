@@ -10,3 +10,7 @@
   margin-bottom: .4rem;
   margin-right: .4rem;
 }
+
+.panel-heading {
+  cursor: pointer;
+}
