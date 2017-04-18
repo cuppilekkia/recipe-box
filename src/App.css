@@ -1,0 +1,12 @@
+.panel .button {
+  margin-right: 10px;
+}
+
+.panel-block {
+  display: block;
+}
+
+.panel-block .tag {
+  margin-bottom: .4rem;
+  margin-right: .4rem;
+}
